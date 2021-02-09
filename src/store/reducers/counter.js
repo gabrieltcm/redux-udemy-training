@@ -23,9 +23,6 @@ const reducer = (state = initialState, action) => {
       };
     case actionTypes.SUBTRACT:
       return updateObject(state, { counter: state.counter - action.val });
-      return {
-        ...state,
-      };
     default:
       return state;
   }

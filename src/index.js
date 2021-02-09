@@ -30,7 +30,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
   rootReducer,
-  composeEnhancers(applyMiddleware(logger, thunk))
+  composeEnhancers(applyMiddleware(logger, thunk)) //Enabling Redux Thunk for our Redux to handle asynchronous codes
 );
 
 ReactDOM.render(
